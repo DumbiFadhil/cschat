@@ -3,8 +3,8 @@ import './globals.css'
 
 // Done after the video and optional: add page metadata
 export const metadata = {
-  title: 'CSChat | Home',
-  description: 'Welcome to CSChat first Closed Beta Test',
+  title: 'FriendZone | Home',
+  description: 'Welcome to the FriendZone',
 }
 
 export default function RootLayout({

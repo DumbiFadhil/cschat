@@ -12,11 +12,13 @@ export async function POST(req: Request) {
     const body = await req.json()
 
     const { email: emailToAdd } = addFriendValidator.parse(body.email)
+    console.log(emailToAdd)
 
     const idToAdd = (await fetchRedis(
       'get',
       `user:email:${emailToAdd}`
     )) as string
+    console.log(idToAdd)
 
     if (!idToAdd) {
       return new Response('This person does not exist.', { status: 400 })
@@ -71,6 +73,7 @@ export async function POST(req: Request) {
 
     return new Response('OK')
   } catch (error) {
+    console.error('Error:', error);
     if (error instanceof z.ZodError) {
       return new Response('Invalid request payload', { status: 422 })
     }
