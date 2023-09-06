@@ -19,7 +19,7 @@ interface LayoutProps {
 
 // Done after the video and optional: add page metadata
 export const metadata = {
-  title: 'FriendZone | Dashboard',
+  title: 'CSChat 0.4 | Dashboard',
   description: 'Your dashboard',
 }
 
