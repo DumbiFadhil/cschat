@@ -1,4 +1,4 @@
-# FriendZone - A full-stack realtime messaging chat application
+# CSChat - A full-stack realtime messaging chat application
 
 A project to learn modern full-stack development made by Josh.
 
